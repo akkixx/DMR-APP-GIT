@@ -1,0 +1,38 @@
+{
+  "appId": "com.dmr.app",
+  "appName": "DMR",
+  "webDir": "www",
+  "bundledWebRuntime": true,
+  "server": {
+    "androidScheme": "file",
+    "cleartext": true,
+    "allowNavigation": ["*"],
+    "hostname": "localhost"
+  },
+  "android": {
+    "path": "android",
+    "webContentsDebuggingEnabled": true,
+    "allowMixedContent": true,
+    "captureInput": true,
+    "initialFocus": true,
+    "hideLogs": false,
+    "useLegacyBridge": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": true,
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": true,
+      "splashFullScreen": true,
+      "splashImmersive": true
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon_config_sample",
+      "iconColor": "#488AFF"
+    },
+    "WebView": {
+      "scrollEnabled": true,
+      "allowFileAccess": true
+    }
+  }
+}
